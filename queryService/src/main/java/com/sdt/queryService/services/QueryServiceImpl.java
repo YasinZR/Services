@@ -49,7 +49,7 @@ public class QueryServiceImpl implements QueryService {
         queryInfoDto.setStatus(savedQuery.getStatus());
 
         // Send an event to Kafka (example)
-        kafkaTemplate.send("query-topic", queryInfoDto);
+//        kafkaTemplate.send("query-topic", queryInfoDto);
 
         return queryInfoDto;
     }

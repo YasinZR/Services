@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Component
+
 @Data
 public class QueryResultDto {
     private Integer id;
