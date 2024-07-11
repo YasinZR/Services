@@ -26,7 +26,6 @@ public class ResultServiceImpl implements ResultService {
                 .orElseThrow(() -> new RuntimeException("Query not found"));
 
         query.setStatus(resultDto.getStatus());
-        query.setResult(resultDto.getResult()); // Сохраняем результат
 
         queryRepository.save(query);
     }
